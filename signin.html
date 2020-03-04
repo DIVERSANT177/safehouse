@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/signin.css">
     <title>Sign in</title>
 </head>
 
-<body>
+<body class="bg-light">
     <div class="container d-flex justify-content-center text-center align-items-center" style="height:100vh;">
-        <form class="my-auto" style="width: 300px;" method="POST">
+        <form class="form-signin" style="width: 300px;" method="POST">
             <img src="images/bootstrap-solid.svg" alt="bootstrap" width="70px" class="mb-1">
             <h3 class="m-3">
                 Please sign in
             </h3>
-            <div class="form-group input-group input-group-lg"  style="margin-bottom: 0;">
-                <input type="email" required class="form-control" placeholder="Email address">
+            <label for="input email" class="sr-only">Email address</label>
+            <div class="form-group input-group input-group-lg" style="margin-bottom: 0;">
+                <input type="email" required autofocus class="form-control" placeholder="Email address">
             </div>
-            <div class="form-group input-group input-group-lg">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <div class="form-group input-group input-group-lg" >
                 <input type="password" required class="form-control" placeholder="Password">
             </div>
             <div class="form-group form-check">
